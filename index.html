@@ -177,6 +177,9 @@
 
 			</style>
 		<!-- other -->
+
+		
+
 		
 	</head>
 
@@ -208,18 +211,37 @@
 -->
 			<h3 id="research"> Research </h3>
 
+			<h4> Image concerns and the dynamics of prosocial behavior </h4>
+					<p> 
+						with <a href="https://www.linkedin.com/in/dr-jana-hofmeier-b751b2173" title="Jana Hofmeier" target="_blank">Jana Hofmeier</a>
+					</p>
+					<p><i>Frontiers in Behavioral Economics</i>, 2023, Vol. 2</p>
+					<p>
+						<a href="#" id="click-pub-3" class="click-pub" data-target="abstract-pub-3">[abstract]</a>
+						<a href="https://www.frontiersin.org/articles/10.3389/frbhe.2023.1220007/pdf" target="_blank">[pdf]</a>		
+                	</p>
+					<div style="display: none;" id="abstract-pub-3" class="abstract-pub">
+					  <p>
+					  	Past experimental studies have documented a positive effect of observability on prosocial behavior. However, little is known about spillover effects on subsequent, unobserved prosocial actions. This paper studies the dynamic effect of observability on prosocial behavior. We hypothesize a twofold positive effect. First, in accordance with previous literature, people should act more prosocially when being observed. Second, this increased level of prosociality should motivate an ongoing elevated altruistic attitude, in accordance with the concept of altruistic capital formation. We test our predictions by running two experiments in which subjects make a first donation decision either observably or anonymously. Subsequently, all subjects face a second anonymous donation decision. In general, we observe high rates of altruistic behavior. However, we find only weak positive effects of observability on first-stage prosocial behavior and no effects on second-stage prosocial behavior.
+					  </p>
+					</div>					
+
 			<h4> Concentration Bias in Intertemporal Choice </h4>
 					<p> 
 						with <a href="http://www.dertwinkel.com" title="Markus Dertwinkel-Kalt" target="_blank">Markus Dertwinkel-Kalt</a>, <a href="https://www.iame.uni-bonn.de/people/holger-gerhardt" title="Holger Gerhardt" target="_blank">Holger Gerhardt</a>, <a href="https://gerhardriener.github.io" title="Gerhard Riener" target="_blank">Gerhard Riener</a> and <a href="https://sites.google.com/site/frederikschwerter/" title="Frederik Schwerter" target="_blank">Frederik Schwerter</a>
 					</p>
 					<p><i>The Review of Economic Studies</i>, 2022, Vol. 89(3): 1314–1334</p>
+					<p>	
+						<a href="#" id="click-pub-1" class="click-pub" data-target="abstract-pub-1">[abstract]</a>
+						<a href="https://academic.oup.com/restud/article/89/3/1314/6375961" target="_blank">[pdf]</a>
+						<a href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_076_2021.pdf" target="_blank">[WP Version]</a>
+					</p>
+					<div style="display: none;" id="abstract-pub-1" class="abstract-pub">
 					<p>
 						Many intertemporal trade-offs are unbalanced: while the advantages of options are concentrated in a few periods, the disadvantages are dispersed over numerous periods. We provide novel experimental evidence for “concentration bias”, the tendency to overweight advantages that are concentrated in time. Subjects commit to too much overtime work that is dispersed over multiple days in exchange for a bonus that is concentrated in time: concentration bias increases subjects’ willingness to work by 22.4% beyond what standard discounting models could account for. In additional conditions and a complementary experiment involving monetary payments, we study the mechanisms behind concentration bias and demonstrate the robustness of our findings.
 					</p>
-					<p>	
-						<a href="https://academic.oup.com/restud/article/89/3/1314/6375961" target="_blank">[pdf]</a>
-						<a href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_076_2021.pdf" target="_blank">[Working Paper Version]</a> <i>ECONtribute Discussion Paper No. 076</i>
-					</p>
+					</div>
+					
 
 
 				<h4> (Not) Everyone Can Be a Winner – The Role of Payoff Interdependence for Redistribution </h4> 
@@ -227,11 +249,15 @@
 						with <a href="https://sites.google.com/site/sebastianschaube" title="Sebastian Schaube" target="_blank">Sebastian Schaube</a>
 					</p>
 					<p>
+						<a href="#" id="click-pub-2" class="click-pub" data-target="abstract-pub-2">[abstract]</a>
+						<a href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_160_2022.pdf" target="_blank">[pdf]</a>
+					</p>
+					<div style="display: none;" id="abstract-pub-2" class="abstract-pub">
+					<p>
 						Frequently, one person’s success comes at the expense of others. We contrast such zero-sum environments in which individuals’ payoffs are interdependent to those where payoffs are independent. In a laboratory experiment, we study whether the resulting inequality is perceived differently and how this affects redistribution. Across treatments, we compare a spectator’s redistribution of two workers’ earnings. If workers do not compete in a zero-sum setting, average redistribution decreases. In a representative survey, we replicate this finding and document that individuals who believe in a zero-sum world support higher levels of redistribution and are more likely to be Democrats.
 					</p>
-					<p>
-						<a href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_160_2022.pdf" target="_blank">[pdf]</a> <i>ECONtribute Discussion Paper No. 160</i>
-					</p>
+					</div>
+					
 
 
 				<h4> Awards and Social Image </h4>
@@ -255,5 +281,25 @@
 					</p>
 	
 </div> <!-- ends page -->
+
+
+<!-- Javascript -->
+<script>
+  // Function to toggle the visibility of the textbox
+  function toggleTextbox(textboxContainerId) {
+    var textboxContainer = document.getElementById(textboxContainerId);
+    textboxContainer.style.display = (textboxContainer.style.display === 'none') ? 'block' : 'none';
+  }
+
+  // Add click event listeners to all clickable words
+  var clickableWords = document.getElementsByClassName('click-pub');
+  for (var i = 0; i < clickableWords.length; i++) {
+    clickableWords[i].addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      var textboxContainerId = this.getAttribute('data-target'); // Get the target textbox container ID
+      toggleTextbox(textboxContainerId);
+    });
+  }
+</script>
 	</body>
 </html>
